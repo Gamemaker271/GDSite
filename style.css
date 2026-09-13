@@ -1,0 +1,23 @@
+body {
+    font-family: Verdana;
+    background-color: lightgrey;
+}
+.selected {
+    background-color: dimgrey;
+}
+.unselected {
+   background-color: lightgrey;
+}
+.action {
+    background-color: grey;
+}
+main {
+    padding-top: 4px;
+}
+.demon-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.demon-video {
+    width:100%;
+}
