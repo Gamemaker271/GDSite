@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Demon Levels</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>GD Demon Levels</h1>
+    </header>
+    <nav>
+        <button class="action" onclick="window.location.href='../index.html'">Back</button>
+        <button class="unselected" onclick="window.location.href='gd.html'">Home</button>
+        <button class="selected" onclick="window.location.href='gddemonlevels.html'">Demon Levels</button>
+        <button class="unselected" onclick="window.location.href='gdotherlevels.html'">Other Levels</button>
+    </nav>
+    <main>
+        <div class="demon-container">
+            <video class="demon-video">
+                <source src="Demons/slaughterhouse.mp4#t=44.33">
+                Your browser does not support the video tag.
+            </video>
+            <video class="demon-video">
+                <source src="Demons/sakupencircles.mp4#t=33.55">
+                Your browser does not support the video tag.
+            </video>
+            <video class="demon-video">
+                <source src="Demons/humanlimit.mp4#t=28.57">
+                Your browser does not support the video tag.
+            </video>
+            <video class="demon-video">
+                <source src="Demons/grief.mp4#t=124.21">
+                Your browser does not support the video tag.
+            </video>
+            <video class="demon-video">
+                <source src="Demons/silentclubstep.mp4#t=57.21">
+                Your browser does not support the video tag.
+            </video>
+            <video class="demon-video">
+                <source src="Demons/ton618.mp4#t=29.59">
+                Your browser does not support the video tag.
+            </video>
+            <video class="demon-video">
+                <source src="Demons/tartarus.mp4#t=84.5">
+                Your browser does not support the video tag.
+            </video>
+            <video class="demon-video">
+                <source src="Demons/ninecircles.mp4#t=56.79">
+                Your browser does not support the video tag.
+            </video>
+            <p>bloodbath</p>
+            <video class="demon-video">
+                <source src="Demons/sonicwave.mp4#t=56.79">
+                Your browser does not support the video tag.
+            </video>
+            <video class="demon-video">
+                <source src="Demons/limbo.mp4#t=125">
+                Your browser does not support the video tag.
+            </video>
+            <video class="demon-video">
+                <source src="Demons/orbit.mp4#t=120.7">
+                Your browser does not support the video tag.
+            </video>
+            <video class="demon-video">
+                <source src="Demons/silentsilhouette.mp4#t=56.45">
+                Your browser does not support the video tag.
+            </video>
+	    <video class="demon-video">
+                <source src="Demons/society.mp4#t=49.05">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <script>
+            const videos = document.querySelectorAll('.demon-video');
+
+            videos.forEach((vid) => {
+                // Add a one-time listener to each video
+                vid.addEventListener('click', () => {
+                    // Reset to the start of the video
+                    vid.controls = true;
+                    vid.currentTime = 0;
+                    vid.play();
+                }, { once: true });
+            });
+        </script>
+    </main>
+</body>
+</html>
